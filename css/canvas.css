@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Audiowide&family=Bebas+Neue&family=Fira+Mono:wght@400;500;700&family=Geo:ital@0;1&family=Gruppo&family=Gugi&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&family=Staatliches&display=swap');
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+html, body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    background-color: #333333;
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+}
+
+h1, h2, h3{
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.33rem;
+    padding-left: 10px;
+    border-left: 18px solid black;
+    border-bottom: 1px solid black;
+	text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
+h4, h5, h6{
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 0.33rem;
+	font-weight: 400;
+}
+
+.bg-fx{
+	z-index: -99;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url('https://www.mediafire.com/convkey/a7ec/b25y2y3k1c1lh5kzg.jpg');
+	filter: blur( 0 );
+	background-size: 100% auto;
+	background-position: center center;
+	animation: blurfade 15s ease-in-out infinite alternate;
+    opacity: 0.15;
+}
+
+@keyframes blurfade{
+
+	0% {
+		filter: blur( 0.66rem ) contrast(1) brightness( 0.66 ) sepia(0.0) hue-rotate(360deg);
+	}
+
+	100%{
+		filter: blur(1.75rem) contrast(1.66) brightness(2.33 ) sepia(12) hue-rotate(90deg);
+	}
+
+}
+
+content{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border: 1px solid #66FF66;
+	background-color: rgba( 50, 255, 50, 0.15 );
+}
+
+.masthead {
+  height: 50vh;
+  min-height: 30vh;
+  background-color: transparent;
+  opacity: 0.66;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) contrast(1.15) brightness(0.66);
+}
+
+section{
+    color: #CCCCCC;
+    background-color: #CCC;
+    background: linear-gradient( 90deg, rgba(63,70,67,1) 0%, rgba(33,40,37,0.99) 100% );
+}
+
+footer{
+    background-color: #444444;
+    display: block;
+    width: 130%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 20px;
+}
+
+.navbar_brand{
+	width: 32px;
+	height: 32px;
+	filter: saturate(0) contrast( 0.15 );
+}
+
+.navbar-brand{
+	letter-spacing: 3px;
+	line-height: 32px;
+	text-align: middle;
+	vertical-align: middle;
+}
+
+#canvas0{
+	border: 2px solid #001000;
+	background: linear-gradient(0deg, rgb(10,30,20) 0%, rxgb(0,10,5) 100% );
+	background-color: #333;
+	border-radius: 9px;
+}
